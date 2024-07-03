@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout, Menu, Input, Button } from 'antd';
-import { Link } from 'react-router-dom';
 import logo from '../Assets/Averylogo.jpg';
 import heart from '../Assets/heart.jpg';
 import cart from '../Assets/cart.jpg';
@@ -43,12 +42,12 @@ const NavBar = () => {
           wordSpacing : '200px'
         }}
       >
-        <img src={logo} alt="Avery로고" style={{width: '100px', height: 'auto', position : 'relative', left : '150px', top : '20px'}} />
+        <img src={logo} alt="Avery로고" style={{width: '100px', height: 'auto', position : 'relative', left : '50px', top : '20px'}} />
         <Menu
           theme="light"
           mode="horizontal">
             {items.map(item => (
-            <Menu.Item key={item.key} style={{ position : 'relative', bottom : '180px', left : '750px', wordSpacing : '100px'}}> 
+            <Menu.Item key={item.key} style={{ position : 'relative', bottom : '180px', left : '200px', wordSpacing : '800px'}}> 
               <a href={item.link} style={{color: 'black', fontSize: '30px', marginRight : '100px'}} > {item.label}</a>
             </Menu.Item>
             ))}
@@ -56,30 +55,30 @@ const NavBar = () => {
         <Search
           placeholder="Search"
           onSearch={value => console.log(value)}
-          style={{width : '380px', textAlign : 'center', position : 'relative', bottom : '100px', left : '1000px'}}
+          style={{width : '380px', textAlign : 'center', position : 'relative', bottom : '100px', left : '720px'}}
         />
-          <img src={heart} alt="하트 아이콘" style={{position : 'relative', bottom : '150px', left : '1400px'}} />
-          <img src={cart} alt="장바구니" style={{position : 'relative', bottom : '142px', left : '1420px'}} />
-          <img src={bell} alt="종" style={{position : 'relative', bottom : '142px', left : '1440px'}} />
-          <Button type="primary" on Click={handleLoginClick} style={{position : 'relative', bottom : '155px', left : '1470px'}} >로그인</Button>
+          <img src={heart} alt="하트 아이콘" style={{position : 'relative', bottom : '150px', left : '800px'}} />
+          <img src={cart} alt="장바구니" style={{position : 'relative', bottom : '145px', left : '820px'}} />
+          <img src={bell} alt="종" style={{position : 'relative', bottom : '145px', left : '850px'}} />
+          <Button type="primary" on Click={handleLoginClick} style={{position : 'relative', bottom : '160px', left : '900px'}} >로그인</Button>
       </Header>
       <Content style={{ padding : '50px', textAlign : 'center'}}>
         <div style={{ marginRight : '3px'}}>
         {/* 클릭 가능한 이미지 */}
         <a href='/'>
-          <img src = { ClothesImage } alt="옷 사진" style={{ position : 'relative' , right : '213px', top : '50px' }} />  
+          <img src = { ClothesImage } alt="옷 사진" style={{ position : 'relative' , right : '130px', top : '50px', width : '400px'}} />  
         </a>
         <a href='/'>
-          <img src = { SpecialCoupon } alt="스페셜 쿠폰" style={{ position : 'relative' , left : '-40px', top : '50px' }} />  
+          <img src = { SpecialCoupon } alt="스페셜 쿠폰" style={{ position : 'relative' , right : '-20px', top : '50px', width : '400px' }} />  
         </a>
         <a href='/'>
-          <img src = { Discount } alt="할인" style={{ position : 'relative' , left : '100px', top : '50px' }} />  
+          <img src = { Discount } alt="할인" style={{ position : 'relative' , right : '-40px', top : '50px', width : '400px' }} />  
         </a>
         <a href='/'>
-          <img src = { Clearance } alt="세일즈" style={{ position : 'relative' , left : '210px', top : '50px' }} />  
+          <img src = { Clearance } alt="세일즈" style={{ position : 'relative' , right : '-60px', top : '50px', width : '400px'}} />  
         </a>
         <a href='/'>
-          <img src = { Passion } alt="당신의 AI 디자이너" style={{ position : 'relative' , left : '600px', top : '100px', height : '230px'}} />  
+          <img src = { Passion } alt="당신의 AI 디자이너" style={{ position : 'relative' , left : '400px', top : '100px', height : '230px'}} />  
         </a>
         <a href='/'>
           <img src = { Weekly_1 } alt="Weekly-first" style={{ position : 'relative' , right : '1000px', top : '400px'}} />  
